@@ -1,0 +1,14 @@
+{
+  "name": "PlayDota Hero Sounds",
+  "version": "1.0",
+  "description": "Let's you download hero sounds at the hero page.",
+  "icons": {
+    "48" : "icon-48.png"
+  },
+  "content_scripts": [
+    {
+	  "matches": ["http://www.playdota.com/heroes/*"],
+	  "js": ["downloadize.js"]
+    }
+  ]
+}
